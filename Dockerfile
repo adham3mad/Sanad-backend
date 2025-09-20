@@ -3,15 +3,15 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /app
 
 # Copy solution file
-COPY SanadAPI.sln .
+COPY Sanad.sln .
 
 # Copy project files
-COPY SanadAPI/*.csproj ./SanadAPI/
+COPY Sanad/*.csproj ./Sanad/
 RUN dotnet restore
 
 # Copy everything else
-COPY SanadAPI/. ./SanadAPI/
-WORKDIR /app/SanadAPI
+COPY Sanad/. ./Sanad/
+WORKDIR /app/Sanad
 RUN dotnet publish -c Release -o /app/publish
 
 # Stage 2: Runtime
@@ -19,4 +19,4 @@ FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
 COPY --from=build /app/publish .
 EXPOSE 80
-ENTRYPOINT ["dotnet", "SanadAPI.dll"]
+ENTRYPOINT ["dotnet", "Sanad.dll"]
