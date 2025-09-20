@@ -12,7 +12,7 @@ namespace Sanad.DTOs
         [EmailAddress(ErrorMessage = "Invalid email address.")]
         public string Email { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Password is required")]
         [StrongPassword]
         public string Password { get; set; }
 

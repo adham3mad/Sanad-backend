@@ -13,7 +13,7 @@ public class StrongPasswordAttribute : ValidationAttribute
         var password = value as string;
 
         if (string.IsNullOrWhiteSpace(password))
-            return new ValidationResult("Password is required.");
+            return ValidationResult.Success;
 
         if (!HasUpper.IsMatch(password))
             return new ValidationResult("Password must contain at least one uppercase letter.");
