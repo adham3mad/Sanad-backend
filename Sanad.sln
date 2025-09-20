@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36109.1 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sanad", "Sanad\Sanad.csproj", "{7504C9F9-1900-49D2-B619-DCE8D72174DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7504C9F9-1900-49D2-B619-DCE8D72174DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7504C9F9-1900-49D2-B619-DCE8D72174DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7504C9F9-1900-49D2-B619-DCE8D72174DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7504C9F9-1900-49D2-B619-DCE8D72174DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2C28E741-6C30-4ADE-9D8A-A9C18CAC4CA0}
+	EndGlobalSection
+EndGlobal
