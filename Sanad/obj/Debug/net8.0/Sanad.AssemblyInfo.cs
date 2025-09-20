@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sanad")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f6bc19f843cddf53726e92b4fa377e7e193d73d0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sanad")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sanad")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

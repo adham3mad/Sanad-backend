@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Sanad\\Sanad\\Sanad\\Sanad.csproj": {}
+    "F:\\Sanad-backend\\Sanad\\Sanad.csproj": {}
   },
   "projects": {
-    "F:\\Sanad\\Sanad\\Sanad\\Sanad.csproj": {
+    "F:\\Sanad-backend\\Sanad\\Sanad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Sanad\\Sanad\\Sanad\\Sanad.csproj",
+        "projectUniqueName": "F:\\Sanad-backend\\Sanad\\Sanad.csproj",
         "projectName": "Sanad",
-        "projectPath": "F:\\Sanad\\Sanad\\Sanad\\Sanad.csproj",
+        "projectPath": "F:\\Sanad-backend\\Sanad\\Sanad.csproj",
         "packagesPath": "C:\\Users\\Adham\\.nuget\\packages\\",
-        "outputPath": "F:\\Sanad\\Sanad\\Sanad\\obj\\",
+        "outputPath": "F:\\Sanad-backend\\Sanad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
