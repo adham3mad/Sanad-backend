@@ -17,6 +17,10 @@ RUN dotnet publish -c Release -o /app/publish
 # Stage 2: Runtime
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
+
+# Add this line to bind Kestrel to Railway's dynamic port
+ENV ASPNETCORE_URLS=http://+:${PORT}
+
 COPY --from=build /app/publish .
 EXPOSE 80
 ENTRYPOINT ["dotnet", "Sanad.dll"]
