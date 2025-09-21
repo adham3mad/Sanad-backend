@@ -79,7 +79,7 @@ namespace Sanad.Controllers
             return Ok(new { message = "User registered successfully. Please check your email to verify your account." });
         }
 
-        [HttpGet("verify-email")]
+        [HttpPost("verify-email")]
         public async Task<IActionResult> VerifyEmail([FromBody] VerifyEmailDto request)
         {
             var userId = request.UserId;
