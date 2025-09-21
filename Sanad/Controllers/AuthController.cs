@@ -107,21 +107,28 @@ namespace Sanad.Controllers
         {
             try
             {
-                var user = await context.Users.FirstOrDefaultAsync(u => u.Email == model.Email);
-                if (user == null || !BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
-                    return Unauthorized("Invalid credentials");
-
+                var isEmailExist = await context.Users.AnyAsync(u => u.Email == model.Email);
+                if (!isEmailExist)
+                    return NotFound("Email not found");
+                var user = await context.Users
+                    .FirstOrDefaultAsync(u => u.Email == model.Email);
+                if (!BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
+                    return Unauthorized("Invalid password");
                 if (!user.IsEmailConfirmed)
                     return Unauthorized("Please verify your email before logging in.");
-
-                var token = GenerateJwtToken(user);
-                return Ok(new { token });
+                return Ok(new
+                {
+                    id = user.Id,
+                    name = user.Name, 
+                    email = user.Email
+                });
             }
             catch (Exception ex)
             {
                 return StatusCode(500, $"Login failed: {ex.Message}");
             }
         }
+
 
         [HttpPost("forget-password")]
         public async Task<IActionResult> ForgetPassword([FromBody] ForgetPasswordDto dto)
