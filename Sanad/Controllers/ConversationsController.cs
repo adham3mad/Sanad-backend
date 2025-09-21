@@ -18,16 +18,11 @@ namespace SanadAPI.Controllers
             context = _context;
         }
 
-
-        private Guid GetCurrentUserId() =>
-            Guid.Parse(User.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? Guid.Empty.ToString());
-
-
         [HttpPost]
-        public async Task<ActionResult<ConversationDto>> CreateConversation(string Title)
+        public async Task<ActionResult<ConversationDto>> CreateConversation(string Title ,Guid UserId)
         {
             var dto = new CreateConversationDto {
-                UserId = GetCurrentUserId(), 
+                UserId = UserId, 
                 Title = Title
             };
 
