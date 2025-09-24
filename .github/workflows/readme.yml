@@ -1,0 +1,33 @@
+name: Auto-generate README
+
+on:
+  push:
+    branches: [ "main" ]   # لو فرعك اسمه master غيّره
+  workflow_dispatch:        # تقدر تشغله يدوي كمان
+
+jobs:
+  generate-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install readmeai
+        run: pip install -U readmeai
+
+      - name: Generate README
+        run: readmeai --api offline --repository . --output README.md
+
+      - name: Commit README
+        uses: EndBug/add-and-commit@v9
+        with:
+          author_name: github-actions
+          author_email: github-actions@github.com
+          message: "chore: regenerate README"
+          add: "README.md"
