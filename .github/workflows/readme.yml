@@ -2,12 +2,14 @@ name: Auto-generate README
 
 on:
   push:
-    branches: [ "main" ]   # لو فرعك اسمه master غيّره
-  workflow_dispatch:        # تقدر تشغله يدوي كمان
+    branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   generate-readme:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write   # لازم علشان يقدر يعمل commit/push
 
     steps:
       - name: Checkout repo
@@ -18,8 +20,8 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install readmeai
-        run: pip install -U readmeai
+      - name: Install readmeai (no deps)
+        run: pip install readmeai --no-cache-dir --no-deps
 
       - name: Generate README
         run: readmeai --api offline --repository . --output README.md
