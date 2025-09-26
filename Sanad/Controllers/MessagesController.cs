@@ -9,7 +9,6 @@ namespace SanadAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
     public class MessagesController : ControllerBase
     {
         private readonly DbEntity context;

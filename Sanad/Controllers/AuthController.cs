@@ -107,27 +107,46 @@ namespace Sanad.Controllers
         {
             try
             {
-                var isEmailExist = await context.Users.AnyAsync(u => u.Email == model.Email);
-                if (!isEmailExist)
-                    return NotFound("Email not found");
                 var user = await context.Users
+                    .Include(u => u.Conversations)
+                    .ThenInclude(c => c.Messages)
                     .FirstOrDefaultAsync(u => u.Email == model.Email);
+
+                if (user == null)
+                    return NotFound(new { message = "Email not found" });
                 if (!BCrypt.Net.BCrypt.Verify(model.Password, user.PasswordHash))
-                    return Unauthorized("Invalid password");
+                    return Unauthorized(new { message = "Invalid password" });
                 if (!user.IsEmailConfirmed)
-                    return Unauthorized("Please verify your email before logging in.");
-                return Ok(new
+                    return Unauthorized(new { message = "Please verify your email before logging in." });
+                var userDto = new UserDto
                 {
-                    id = user.Id,
-                    name = user.Name, 
-                    email = user.Email
-                });
+                    Id = user.Id,
+                    Name = user.Name,
+                    Image = user.Image,
+                    Email = user.Email,
+                    Role = user.Role,
+                    Conversations = user.Conversations.Select(c => new ConversationDto
+                    {
+                        Id = c.Id,
+                        Title = c.Title,
+                        CreatedAt = c.CreatedAt,
+                        Messages = c.Messages.Select(m => new MessageDto
+                        {
+                            Id = m.Id,
+                            Role = m.Role,
+                            Content = m.Content,
+                            CreatedAt = m.CreatedAt
+                        }).ToList()
+                    }).ToList()
+                };
+                return Ok(userDto);
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Login failed: {ex.Message}");
+                return StatusCode(500, new { message = $"Login failed: {ex.Message}" });
             }
         }
+
 
 
         [HttpPost("forget-password")]
