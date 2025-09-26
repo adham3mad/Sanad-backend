@@ -20,33 +20,47 @@ namespace SanadAPI.Controllers
             context = _context;
         }
 
-       
+
         [HttpPost]
         public async Task<ActionResult<MessageDto>> CreateMessage(CreateMessageDto dto)
         {
-
-            var conv = await context.Conversations.FindAsync(dto.ConversationId);
-            if (conv == null) return NotFound();
-
-            var message = new Message
+            try
             {
-                Role = dto.Role,
-                Content = dto.Content,
-                Conversation_Id = dto.ConversationId,
-                CreatedAt = DateTime.Now
-            };
+                if (dto == null)
+                    return BadRequest("Invalid request body");
 
-            context.Messages.Add(message);
-            await context.SaveChangesAsync();
+                if (dto.ConversationId == 0)
+                    return BadRequest("ConversationId is required");
 
-            return new MessageDto
+                var conv = await context.Conversations.FindAsync(dto.ConversationId);
+                if (conv == null)
+                    return NotFound($"Conversation with ID {dto.ConversationId} not found");
+
+                var message = new Message
+                {
+                    Role = dto.Role ?? "user",
+                    Content = dto.Content ?? "",
+                    Conversation_Id = dto.ConversationId,
+                    CreatedAt = DateTime.Now
+                };
+
+                context.Messages.Add(message);
+                await context.SaveChangesAsync();
+
+                return Ok(new MessageDto
+                {
+                    Id = message.Id,
+                    Role = message.Role,
+                    Content = message.Content,
+                    CreatedAt = message.CreatedAt
+                });
+            }
+            catch (Exception ex)
             {
-                Id = message.Id,
-                Role = message.Role,
-                Content = message.Content,
-                CreatedAt = message.CreatedAt
-            };
+                return StatusCode(500, $"Server Error: {ex.Message}");
+            }
         }
+
 
         [HttpGet("conversation/{conversationId}")]
         public async Task<ActionResult<IEnumerable<MessageDto>>> GetConversationMessages(int conversationId)
