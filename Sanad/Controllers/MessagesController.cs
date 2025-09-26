@@ -38,10 +38,10 @@ namespace SanadAPI.Controllers
 
                 var message = new Message
                 {
-                    Role = dto.Role ?? "user",
-                    Content = dto.Content ?? "",
+                    Role = string.IsNullOrWhiteSpace(dto.Role) ? "user" : dto.Role,
+                    Content = string.IsNullOrWhiteSpace(dto.Content) ? " " : dto.Content,
                     Conversation_Id = dto.ConversationId,
-                    CreatedAt = DateTime.Now
+                    CreatedAt = DateTime.UtcNow
                 };
 
                 context.Messages.Add(message);
@@ -57,9 +57,10 @@ namespace SanadAPI.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Server Error: {ex.Message}");
+                return StatusCode(500, $"Server Error: {ex.InnerException?.Message ?? ex.Message}");
             }
         }
+
 
 
         [HttpGet("conversation/{conversationId}")]
