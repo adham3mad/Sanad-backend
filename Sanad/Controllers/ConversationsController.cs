@@ -1,14 +1,17 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Sanad.Models.Data;
 using Sanad.DTOs;
+using Sanad.Models.Data;
 using System.Security.Claims;
 
 namespace SanadAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
+
     public class ConversationsController : ControllerBase
     {
         private readonly DbEntity context;

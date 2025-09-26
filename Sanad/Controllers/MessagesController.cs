@@ -9,6 +9,8 @@ namespace SanadAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
+
     public class MessagesController : ControllerBase
     {
         private readonly DbEntity context;

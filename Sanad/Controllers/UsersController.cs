@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using Sanad.Models.Data;
 using Sanad.DTOs;
+using Sanad.Models.Data;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System.Security.Cryptography;
@@ -11,6 +12,8 @@ namespace SanadAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [AllowAnonymous]
+
     public class UsersController : ControllerBase
     {
         private readonly EmailSettings emailSettings;
