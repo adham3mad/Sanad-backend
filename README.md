@@ -165,6 +165,34 @@
 			</table>
 		</blockquote>
 	</details>
+	<!-- .github Submodule -->
+	<details>
+		<summary><b>.github</b></summary>
+		<blockquote>
+			<div class='directory-path' style='padding: 8px 0; color: #666;'>
+				<code><b>⦿ .github</b></code>
+			<!-- workflows Submodule -->
+			<details>
+				<summary><b>workflows</b></summary>
+				<blockquote>
+					<div class='directory-path' style='padding: 8px 0; color: #666;'>
+						<code><b>⦿ .github.workflows</b></code>
+					<table style='width: 100%; border-collapse: collapse;'>
+					<thead>
+						<tr style='background-color: #f8f9fa;'>
+							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+							<th style='text-align: left; padding: 8px;'>Summary</th>
+						</tr>
+					</thead>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/.github/workflows/readme.yml'>readme.yml</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+					</table>
+				</blockquote>
+			</details>
+		</blockquote>
+	</details>
 	<!-- Sanad Submodule -->
 	<details>
 		<summary><b>Sanad</b></summary>
@@ -179,7 +207,7 @@
 				</tr>
 			</thead>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/Sanad/Program.cs'>Program.cs</a></b></td>
+					<td style='padding: 8px;'><b><a href='/Sanad/Sanad.http'>Sanad.http</a></b></td>
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
@@ -187,24 +215,24 @@
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/Sanad/Sanad.http'>Sanad.http</a></b></td>
+					<td style='padding: 8px;'><b><a href='/Sanad/Sanad.csproj'>Sanad.csproj</a></b></td>
+					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+				</tr>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/Sanad/Program.cs'>Program.cs</a></b></td>
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/Sanad/appsettings.json'>appsettings.json</a></b></td>
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/Sanad/Sanad.csproj'>Sanad.csproj</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
 			</table>
-			<!-- Controllers Submodule -->
+			<!-- Properties Submodule -->
 			<details>
-				<summary><b>Controllers</b></summary>
+				<summary><b>Properties</b></summary>
 				<blockquote>
 					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ Sanad.Controllers</b></code>
+						<code><b>⦿ Sanad.Properties</b></code>
 					<table style='width: 100%; border-collapse: collapse;'>
 					<thead>
 						<tr style='background-color: #f8f9fa;'>
@@ -213,27 +241,251 @@
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/MessagesController.cs'>MessagesController.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/Properties/launchSettings.json'>launchSettings.json</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+					</table>
+				</blockquote>
+			</details>
+			<!-- obj Submodule -->
+			<details>
+				<summary><b>obj</b></summary>
+				<blockquote>
+					<div class='directory-path' style='padding: 8px 0; color: #666;'>
+						<code><b>⦿ Sanad.obj</b></code>
+					<table style='width: 100%; border-collapse: collapse;'>
+					<thead>
+						<tr style='background-color: #f8f9fa;'>
+							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+							<th style='text-align: left; padding: 8px;'>Summary</th>
+						</tr>
+					</thead>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/obj/Sanad.csproj.nuget.g.props'>Sanad.csproj.nuget.g.props</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/UsersController.cs'>UsersController.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/obj/project.assets.json'>project.assets.json</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/ConversationsController.cs'>ConversationsController.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/obj/Sanad.csproj.nuget.g.targets'>Sanad.csproj.nuget.g.targets</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/TestemailController.cs'>TestemailController.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/obj/Sanad.csproj.nuget.dgspec.json'>Sanad.csproj.nuget.dgspec.json</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+					</table>
+					<!-- Debug Submodule -->
+					<details>
+						<summary><b>Debug</b></summary>
+						<blockquote>
+							<div class='directory-path' style='padding: 8px 0; color: #666;'>
+								<code><b>⦿ Sanad.obj.Debug</b></code>
+							<!-- net8.0 Submodule -->
+							<details>
+								<summary><b>net8.0</b></summary>
+								<blockquote>
+									<div class='directory-path' style='padding: 8px 0; color: #666;'>
+										<code><b>⦿ Sanad.obj.Debug.net8.0</b></code>
+									<table style='width: 100%; border-collapse: collapse;'>
+									<thead>
+										<tr style='background-color: #f8f9fa;'>
+											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+											<th style='text-align: left; padding: 8px;'>Summary</th>
+										</tr>
+									</thead>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.GeneratedMSBuildEditorConfig.editorconfig'>Sanad.GeneratedMSBuildEditorConfig.editorconfig</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.build.json'>staticwebassets.build.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs'>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json'>rjsmcshtml.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.MvcApplicationPartsAssemblyInfo.cs'>Sanad.MvcApplicationPartsAssemblyInfo.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.csproj.Up2Date'>Sanad.csproj.Up2Date</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.AssemblyInfo.cs'>Sanad.AssemblyInfo.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.references.upToDateCheck.txt'>staticwebassets.references.upToDateCheck.txt</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.GlobalUsings.g.cs'>Sanad.GlobalUsings.g.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rpswa.dswa.cache.json'>rpswa.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rjsmrazor.dswa.cache.json'>rjsmrazor.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rbcswa.dswa.cache.json'>rbcswa.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.csproj.BuildWithSkipAnalyzers'>Sanad.csproj.BuildWithSkipAnalyzers</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.removed.txt'>staticwebassets.removed.txt</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.build.endpoints.json'>staticwebassets.build.endpoints.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.csproj.FileListAbsolute.txt'>Sanad.csproj.FileListAbsolute.txt</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.pdb'>Sanad.pdb</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+									</table>
+								</blockquote>
+							</details>
+						</blockquote>
+					</details>
+					<!-- Release Submodule -->
+					<details>
+						<summary><b>Release</b></summary>
+						<blockquote>
+							<div class='directory-path' style='padding: 8px 0; color: #666;'>
+								<code><b>⦿ Sanad.obj.Release</b></code>
+							<!-- net8.0 Submodule -->
+							<details>
+								<summary><b>net8.0</b></summary>
+								<blockquote>
+									<div class='directory-path' style='padding: 8px 0; color: #666;'>
+										<code><b>⦿ Sanad.obj.Release.net8.0</b></code>
+									<table style='width: 100%; border-collapse: collapse;'>
+									<thead>
+										<tr style='background-color: #f8f9fa;'>
+											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+											<th style='text-align: left; padding: 8px;'>Summary</th>
+										</tr>
+									</thead>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.GeneratedMSBuildEditorConfig.editorconfig'>Sanad.GeneratedMSBuildEditorConfig.editorconfig</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.build.json'>staticwebassets.build.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs'>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.publish.json'>staticwebassets.publish.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rjsmcshtml.dswa.cache.json'>rjsmcshtml.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.MvcApplicationPartsAssemblyInfo.cs'>Sanad.MvcApplicationPartsAssemblyInfo.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.publish.endpoints.json'>staticwebassets.publish.endpoints.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.csproj.Up2Date'>Sanad.csproj.Up2Date</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.AssemblyInfo.cs'>Sanad.AssemblyInfo.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.deps.json'>Sanad.deps.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.GlobalUsings.g.cs'>Sanad.GlobalUsings.g.cs</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rpswa.dswa.cache.json'>rpswa.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rjsmrazor.dswa.cache.json'>rjsmrazor.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rbcswa.dswa.cache.json'>rbcswa.dswa.cache.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.build.endpoints.json'>staticwebassets.build.endpoints.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/PublishOutputs.3c8829226e.txt'>PublishOutputs.3c8829226e.txt</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.csproj.FileListAbsolute.txt'>Sanad.csproj.FileListAbsolute.txt</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.pdb'>Sanad.pdb</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+									</table>
+								</blockquote>
+							</details>
+						</blockquote>
+					</details>
+				</blockquote>
+			</details>
+			<!-- Services Submodule -->
+			<details>
+				<summary><b>Services</b></summary>
+				<blockquote>
+					<div class='directory-path' style='padding: 8px 0; color: #666;'>
+						<code><b>⦿ Sanad.Services</b></code>
+					<table style='width: 100%; border-collapse: collapse;'>
+					<thead>
+						<tr style='background-color: #f8f9fa;'>
+							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+							<th style='text-align: left; padding: 8px;'>Summary</th>
+						</tr>
+					</thead>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Services/ITokenService.cs'>ITokenService.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/AuthController.cs'>AuthController.cs</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/HomeController.cs'>HomeController.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/Services/TokenService.cs'>TokenService.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 					</table>
@@ -283,14 +535,6 @@
 								</tr>
 							</thead>
 								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='/Sanad/Models/Data/Message.cs'>Message.cs</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
-									<td style='padding: 8px;'><b><a href='/Sanad/Models/Data/Conversation.cs'>Conversation.cs</a></b></td>
-									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-								</tr>
-								<tr style='border-bottom: 1px solid #eee;'>
 									<td style='padding: 8px;'><b><a href='/Sanad/Models/Data/User.cs'>User.cs</a></b></td>
 									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 								</tr>
@@ -298,9 +542,57 @@
 									<td style='padding: 8px;'><b><a href='/Sanad/Models/Data/DbEntity.cs'>DbEntity.cs</a></b></td>
 									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 								</tr>
+								<tr style='border-bottom: 1px solid #eee;'>
+									<td style='padding: 8px;'><b><a href='/Sanad/Models/Data/Conversation.cs'>Conversation.cs</a></b></td>
+									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+								</tr>
+								<tr style='border-bottom: 1px solid #eee;'>
+									<td style='padding: 8px;'><b><a href='/Sanad/Models/Data/Message.cs'>Message.cs</a></b></td>
+									<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+								</tr>
 							</table>
 						</blockquote>
 					</details>
+				</blockquote>
+			</details>
+			<!-- Controllers Submodule -->
+			<details>
+				<summary><b>Controllers</b></summary>
+				<blockquote>
+					<div class='directory-path' style='padding: 8px 0; color: #666;'>
+						<code><b>⦿ Sanad.Controllers</b></code>
+					<table style='width: 100%; border-collapse: collapse;'>
+					<thead>
+						<tr style='background-color: #f8f9fa;'>
+							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+							<th style='text-align: left; padding: 8px;'>Summary</th>
+						</tr>
+					</thead>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/TestemailController.cs'>TestemailController.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/HomeController.cs'>HomeController.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/AuthController.cs'>AuthController.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/MessagesController.cs'>MessagesController.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/ConversationsController.cs'>ConversationsController.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Controllers/UsersController.cs'>UsersController.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+					</table>
 				</blockquote>
 			</details>
 			<!-- Migrations Submodule -->
@@ -317,7 +609,7 @@
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20250920223151_init.Designer.cs'>20250920223151_init.Designer.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/DbEntityModelSnapshot.cs'>DbEntityModelSnapshot.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
@@ -325,247 +617,7 @@
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/DbEntityModelSnapshot.cs'>DbEntityModelSnapshot.cs</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-					</table>
-				</blockquote>
-			</details>
-			<!-- obj Submodule -->
-			<details>
-				<summary><b>obj</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ Sanad.obj</b></code>
-					<table style='width: 100%; border-collapse: collapse;'>
-					<thead>
-						<tr style='background-color: #f8f9fa;'>
-							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-							<th style='text-align: left; padding: 8px;'>Summary</th>
-						</tr>
-					</thead>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/obj/Sanad.csproj.nuget.g.targets'>Sanad.csproj.nuget.g.targets</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/obj/project.assets.json'>project.assets.json</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/obj/Sanad.csproj.nuget.dgspec.json'>Sanad.csproj.nuget.dgspec.json</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/obj/Sanad.csproj.nuget.g.props'>Sanad.csproj.nuget.g.props</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-					</table>
-					<!-- Debug Submodule -->
-					<details>
-						<summary><b>Debug</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ Sanad.obj.Debug</b></code>
-							<!-- net8.0 Submodule -->
-							<details>
-								<summary><b>net8.0</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ Sanad.obj.Debug.net8.0</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rbcswa.dswa.cache.json'>rbcswa.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.csproj.Up2Date'>Sanad.csproj.Up2Date</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.MvcApplicationPartsAssemblyInfo.cs'>Sanad.MvcApplicationPartsAssemblyInfo.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs'>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.csproj.FileListAbsolute.txt'>Sanad.csproj.FileListAbsolute.txt</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.references.upToDateCheck.txt'>staticwebassets.references.upToDateCheck.txt</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.build.endpoints.json'>staticwebassets.build.endpoints.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rpswa.dswa.cache.json'>rpswa.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.GlobalUsings.g.cs'>Sanad.GlobalUsings.g.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.csproj.BuildWithSkipAnalyzers'>Sanad.csproj.BuildWithSkipAnalyzers</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.AssemblyInfo.cs'>Sanad.AssemblyInfo.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.build.json'>staticwebassets.build.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/staticwebassets.removed.txt'>staticwebassets.removed.txt</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.GeneratedMSBuildEditorConfig.editorconfig'>Sanad.GeneratedMSBuildEditorConfig.editorconfig</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.pdb'>Sanad.pdb</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json'>rjsmcshtml.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rjsmrazor.dswa.cache.json'>rjsmrazor.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-					<!-- Release Submodule -->
-					<details>
-						<summary><b>Release</b></summary>
-						<blockquote>
-							<div class='directory-path' style='padding: 8px 0; color: #666;'>
-								<code><b>⦿ Sanad.obj.Release</b></code>
-							<!-- net8.0 Submodule -->
-							<details>
-								<summary><b>net8.0</b></summary>
-								<blockquote>
-									<div class='directory-path' style='padding: 8px 0; color: #666;'>
-										<code><b>⦿ Sanad.obj.Release.net8.0</b></code>
-									<table style='width: 100%; border-collapse: collapse;'>
-									<thead>
-										<tr style='background-color: #f8f9fa;'>
-											<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-											<th style='text-align: left; padding: 8px;'>Summary</th>
-										</tr>
-									</thead>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rbcswa.dswa.cache.json'>rbcswa.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.csproj.Up2Date'>Sanad.csproj.Up2Date</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.MvcApplicationPartsAssemblyInfo.cs'>Sanad.MvcApplicationPartsAssemblyInfo.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/.NETCoreApp,Version=v8.0.AssemblyAttributes.cs'>.NETCoreApp,Version=v8.0.AssemblyAttributes.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.csproj.FileListAbsolute.txt'>Sanad.csproj.FileListAbsolute.txt</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.deps.json'>Sanad.deps.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.build.endpoints.json'>staticwebassets.build.endpoints.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.publish.json'>staticwebassets.publish.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rpswa.dswa.cache.json'>rpswa.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.GlobalUsings.g.cs'>Sanad.GlobalUsings.g.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.publish.endpoints.json'>staticwebassets.publish.endpoints.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.AssemblyInfo.cs'>Sanad.AssemblyInfo.cs</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.build.json'>staticwebassets.build.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.GeneratedMSBuildEditorConfig.editorconfig'>Sanad.GeneratedMSBuildEditorConfig.editorconfig</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/PublishOutputs.3c8829226e.txt'>PublishOutputs.3c8829226e.txt</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.pdb'>Sanad.pdb</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rjsmcshtml.dswa.cache.json'>rjsmcshtml.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/rjsmrazor.dswa.cache.json'>rjsmrazor.dswa.cache.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-									</table>
-								</blockquote>
-							</details>
-						</blockquote>
-					</details>
-				</blockquote>
-			</details>
-			<!-- Properties Submodule -->
-			<details>
-				<summary><b>Properties</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ Sanad.Properties</b></code>
-					<table style='width: 100%; border-collapse: collapse;'>
-					<thead>
-						<tr style='background-color: #f8f9fa;'>
-							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-							<th style='text-align: left; padding: 8px;'>Summary</th>
-						</tr>
-					</thead>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Properties/launchSettings.json'>launchSettings.json</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20250920223151_init.Designer.cs'>20250920223151_init.Designer.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 					</table>
@@ -601,15 +653,15 @@
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/Sanad.runtimeconfig.json'>Sanad.runtimeconfig.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
 											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/Sanad.deps.json'>Sanad.deps.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/appsettings.json'>appsettings.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/Sanad.runtimeconfig.json'>Sanad.runtimeconfig.json</a></b></td>
+											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
@@ -617,7 +669,7 @@
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
+											<td style='padding: 8px;'><b><a href='/Sanad/bin/Debug/net8.0/appsettings.json'>appsettings.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 									</table>
@@ -649,15 +701,15 @@
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/Sanad.runtimeconfig.json'>Sanad.runtimeconfig.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
 											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/Sanad.deps.json'>Sanad.deps.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/appsettings.json'>appsettings.json</a></b></td>
-											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-										</tr>
-										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/Sanad.runtimeconfig.json'>Sanad.runtimeconfig.json</a></b></td>
+											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
@@ -665,7 +717,7 @@
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
-											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
+											<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/appsettings.json'>appsettings.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 									</table>
@@ -673,30 +725,6 @@
 							</details>
 						</blockquote>
 					</details>
-				</blockquote>
-			</details>
-			<!-- Services Submodule -->
-			<details>
-				<summary><b>Services</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ Sanad.Services</b></code>
-					<table style='width: 100%; border-collapse: collapse;'>
-					<thead>
-						<tr style='background-color: #f8f9fa;'>
-							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-							<th style='text-align: left; padding: 8px;'>Summary</th>
-						</tr>
-					</thead>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Services/TokenService.cs'>TokenService.cs</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/Services/ITokenService.cs'>ITokenService.cs</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-					</table>
 				</blockquote>
 			</details>
 			<!-- DTOs Submodule -->
@@ -713,11 +741,15 @@
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/CreateMessageDto.cs'>CreateMessageDto.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/MessageDto.cs'>MessageDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/LoginDto.cs'>LoginDto.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/CreateUserDto.cs'>CreateUserDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
@@ -729,11 +761,11 @@
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/ResetPasswordDto.cs'>ResetPasswordDto.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/UpdateUserDto.cs'>UpdateUserDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/VerifyEmailDto.cs'>VerifyEmailDto.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/LoginDto.cs'>LoginDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
@@ -741,51 +773,19 @@
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/CreateUserDto.cs'>CreateUserDto.cs</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/UserDto.cs'>UserDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/UpdateUserDto.cs'>UpdateUserDto.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/VerifyEmailDto.cs'>VerifyEmailDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/CreateMessageDto.cs'>CreateMessageDto.cs</a></b></td>
+							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/ResetPasswordDto.cs'>ResetPasswordDto.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/DTOs/CreateConversationDto.cs'>CreateConversationDto.cs</a></b></td>
-							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-						</tr>
-					</table>
-				</blockquote>
-			</details>
-		</blockquote>
-	</details>
-	<!-- .github Submodule -->
-	<details>
-		<summary><b>.github</b></summary>
-		<blockquote>
-			<div class='directory-path' style='padding: 8px 0; color: #666;'>
-				<code><b>⦿ .github</b></code>
-			<!-- workflows Submodule -->
-			<details>
-				<summary><b>workflows</b></summary>
-				<blockquote>
-					<div class='directory-path' style='padding: 8px 0; color: #666;'>
-						<code><b>⦿ .github.workflows</b></code>
-					<table style='width: 100%; border-collapse: collapse;'>
-					<thead>
-						<tr style='background-color: #f8f9fa;'>
-							<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
-							<th style='text-align: left; padding: 8px;'>Summary</th>
-						</tr>
-					</thead>
-						<tr style='border-bottom: 1px solid #eee;'>
-							<td style='padding: 8px;'><b><a href='/.github/workflows/readme.yml'>readme.yml</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 					</table>
@@ -811,15 +811,11 @@
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/publish/Sanad.deps.json'>Sanad.deps.json</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/publish/appsettings.json'>appsettings.json</a></b></td>
-					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
-				</tr>
-				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/publish/Sanad.runtimeconfig.json'>Sanad.runtimeconfig.json</a></b></td>
+					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+				</tr>
+				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/publish/Sanad.deps.json'>Sanad.deps.json</a></b></td>
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
@@ -827,11 +823,15 @@
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
+					<td style='padding: 8px;'><b><a href='/publish/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
+					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+				</tr>
+				<tr style='border-bottom: 1px solid #eee;'>
 					<td style='padding: 8px;'><b><a href='/publish/Sanad.pdb'>Sanad.pdb</a></b></td>
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 				<tr style='border-bottom: 1px solid #eee;'>
-					<td style='padding: 8px;'><b><a href='/publish/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
+					<td style='padding: 8px;'><b><a href='/publish/appsettings.json'>appsettings.json</a></b></td>
 					<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 				</tr>
 			</table>
