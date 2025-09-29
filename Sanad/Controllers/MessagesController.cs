@@ -115,35 +115,25 @@ namespace SanadAPI.Controllers
         private async Task<string> CallAiApiAsync(string message)
         {
             using var client = new HttpClient();
-            var content = new StringContent(
-                message,
-                System.Text.Encoding.UTF8,
-                "application/json"
-            );
+            var content = new StringContent($"\"{message}\"", System.Text.Encoding.UTF8, "application/json");
 
             try
             {
                 var response = await client.PostAsync("https://sanad-ai.up.railway.app/api/v1/data/query/1", content);
+                var responseString = await response.Content.ReadAsStringAsync();
+
+                Console.WriteLine("API Response: " + responseString);
 
                 if (!response.IsSuccessStatusCode)
                     return $"API Error: {response.StatusCode}";
 
-                var responseString = await response.Content.ReadAsStringAsync();
-                Console.WriteLine("API Response: " + responseString);
+                var json = System.Text.Json.JsonSerializer.Deserialize<AiApiResponse>(responseString);
 
-                try
-                {
-                    var json = System.Text.Json.JsonSerializer.Deserialize<AiApiResponse>(responseString);
-                    if (!string.IsNullOrWhiteSpace(json?.response))
-                        return json.response;
+                if (!string.IsNullOrWhiteSpace(json?.response))
+                    return json.response;
 
-                    if (!string.IsNullOrWhiteSpace(json?.answer))
-                        return json.answer;
-                }
-                catch
-                {
-                    return responseString;
-                }
+                if (!string.IsNullOrWhiteSpace(json?.answer))
+                    return json.answer;
 
                 return "No valid AI response found.";
             }
@@ -152,6 +142,7 @@ namespace SanadAPI.Controllers
                 return $"Error calling AI API: {ex.Message}";
             }
         }
+
 
 
     }
