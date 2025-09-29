@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Sanad.Models.Data;
 using Sanad.DTOs;
 using SanadAPI.Models.Data;
+using Sanad.Models;
 
 namespace SanadAPI.Controllers
 {
@@ -20,9 +21,12 @@ namespace SanadAPI.Controllers
             context = _context;
         }
 
+        
+
+        
 
         [HttpPost]
-        public async Task<ActionResult<MessageDto>> CreateMessage(CreateMessageDto dto)
+        public async Task<ActionResult> CreateMessage(CreateMessageDto dto)
         {
             try
             {
@@ -36,23 +40,41 @@ namespace SanadAPI.Controllers
                 if (conv == null)
                     return NotFound($"Conversation with ID {dto.ConversationId} not found");
 
-                var message = new Message
+                if (string.IsNullOrWhiteSpace(dto.Content))
+                    return BadRequest("Message content is required");
+                var userMessage = new Message
                 {
-                    Role = string.IsNullOrWhiteSpace(dto.Role) ? "user" : dto.Role,
-                    Content = string.IsNullOrWhiteSpace(dto.Content) ? " " : dto.Content,
+                    Role = dto.Role,
+                    Content = dto.Content.Trim(),
                     Conversation_Id = dto.ConversationId,
                     CreatedAt = DateTime.UtcNow
                 };
 
-                context.Messages.Add(message);
+                context.Messages.Add(userMessage);
                 await context.SaveChangesAsync();
+                var aiResponse = await CallAiApiAsync(dto.Content);
 
-                return Ok(new MessageDto
+                if (string.IsNullOrWhiteSpace(aiResponse))
+                    aiResponse = "No response from AI.";
+                var aiMessage = new Message
                 {
-                    Id = message.Id,
-                    Role = message.Role,
-                    Content = message.Content,
-                    CreatedAt = message.CreatedAt
+                    Role = "AI",
+                    Content = aiResponse,
+                    Conversation_Id = dto.ConversationId,
+                    CreatedAt = DateTime.UtcNow
+                };
+
+                context.Messages.Add(aiMessage);
+                await context.SaveChangesAsync();
+                return Ok(new
+                {
+                    aiMessage = new MessageDto
+                    {
+                        Id = aiMessage.Id,
+                        Role = aiMessage.Role,
+                        Content = aiMessage.Content,
+                        CreatedAt = aiMessage.CreatedAt
+                    }
                 });
             }
             catch (Exception ex)
@@ -60,6 +82,8 @@ namespace SanadAPI.Controllers
                 return StatusCode(500, $"Server Error: {ex.InnerException?.Message ?? ex.Message}");
             }
         }
+
+
 
 
 
@@ -87,5 +111,48 @@ namespace SanadAPI.Controllers
 
             return messages;
         }
+
+        private async Task<string> CallAiApiAsync(string message)
+        {
+            using var client = new HttpClient();
+            var content = new StringContent(
+                message,
+                System.Text.Encoding.UTF8,
+                "application/json"
+            );
+
+            try
+            {
+                var response = await client.PostAsync("https://sanad-ai.up.railway.app/api/v1/data/query/1", content);
+
+                if (!response.IsSuccessStatusCode)
+                    return $"API Error: {response.StatusCode}";
+
+                var responseString = await response.Content.ReadAsStringAsync();
+                Console.WriteLine("API Response: " + responseString);
+
+                try
+                {
+                    var json = System.Text.Json.JsonSerializer.Deserialize<AiApiResponse>(responseString);
+                    if (!string.IsNullOrWhiteSpace(json?.response))
+                        return json.response;
+
+                    if (!string.IsNullOrWhiteSpace(json?.answer))
+                        return json.answer;
+                }
+                catch
+                {
+                    return responseString;
+                }
+
+                return "No valid AI response found.";
+            }
+            catch (Exception ex)
+            {
+                return $"Error calling AI API: {ex.Message}";
+            }
+        }
+
+
     }
 }
