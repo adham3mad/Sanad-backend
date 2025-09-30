@@ -5,13 +5,13 @@ using Sanad.Models.Data;
 using Sanad.DTOs;
 using SanadAPI.Models.Data;
 using Sanad.Models;
+using System.Text.Json;
 
 namespace SanadAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
     [AllowAnonymous]
-
     public class MessagesController : ControllerBase
     {
         private readonly DbEntity context;
@@ -20,10 +20,6 @@ namespace SanadAPI.Controllers
         {
             context = _context;
         }
-
-        
-
-        
 
         [HttpPost]
         public async Task<ActionResult> CreateMessage(CreateMessageDto dto)
@@ -42,6 +38,8 @@ namespace SanadAPI.Controllers
 
                 if (string.IsNullOrWhiteSpace(dto.Content))
                     return BadRequest("Message content is required");
+
+                // ✅ حفظ رسالة المستخدم
                 var userMessage = new Message
                 {
                     Role = dto.Role,
@@ -52,20 +50,28 @@ namespace SanadAPI.Controllers
 
                 context.Messages.Add(userMessage);
                 await context.SaveChangesAsync();
+
+                // ✅ استدعاء الـ AI
                 var aiResponse = await CallAiApiAsync(dto.Content);
 
-                if (string.IsNullOrWhiteSpace(aiResponse))
-                    aiResponse = "No response from AI.";
+                // لو مفيش رد من الـ AI
+                if (aiResponse == null)
+                    aiResponse = new AiApiResponse { response = "No response from AI." };
+
+                // ✅ حفظ رسالة الـ AI
                 var aiMessage = new Message
                 {
                     Role = "AI",
-                    Content = aiResponse,
+                    Content = aiResponse.response ?? aiResponse.answer ?? "No valid AI response found.",
                     Conversation_Id = dto.ConversationId,
-                    CreatedAt = DateTime.UtcNow
+                    CreatedAt = DateTime.UtcNow,
+                    SourceDocs = aiResponse.source_docs // ✅ تخزين الـ source_docs
                 };
 
                 context.Messages.Add(aiMessage);
                 await context.SaveChangesAsync();
+
+                // ✅ إرجاع الرد للـ frontend
                 return Ok(new
                 {
                     aiMessage = new MessageDto
@@ -73,7 +79,8 @@ namespace SanadAPI.Controllers
                         Id = aiMessage.Id,
                         Role = aiMessage.Role,
                         Content = aiMessage.Content,
-                        CreatedAt = aiMessage.CreatedAt
+                        CreatedAt = aiMessage.CreatedAt,
+                        SourceDocs = aiMessage.SourceDocs
                     }
                 });
             }
@@ -83,17 +90,11 @@ namespace SanadAPI.Controllers
             }
         }
 
-
-
-
-
         [HttpGet("conversation/{conversationId}")]
         public async Task<ActionResult<IEnumerable<MessageDto>>> GetConversationMessages(int conversationId)
         {
-
             var conv = await context.Conversations.FindAsync(conversationId);
             if (conv == null) return NotFound();
-
 
             var messages = await context.Messages
                 .Where(m => m.Conversation_Id == conversationId)
@@ -102,7 +103,8 @@ namespace SanadAPI.Controllers
                     Id = m.Id,
                     Role = m.Role,
                     Content = m.Content,
-                    CreatedAt = m.CreatedAt
+                    CreatedAt = m.CreatedAt,
+                    SourceDocs = m.SourceDocs
                 })
                 .ToListAsync();
 
@@ -112,7 +114,23 @@ namespace SanadAPI.Controllers
             return messages;
         }
 
-        private async Task<string> CallAiApiAsync(string message)
+
+        [HttpGet("{messageId}/source")]
+        public async Task<ActionResult<string>> GetSourceDocs(int messageId)
+        {
+            var message = await context.Messages.FindAsync(messageId);
+
+            if (message == null)
+                return NotFound("Message not found");
+
+            if (string.IsNullOrWhiteSpace(message.SourceDocs))
+                return NotFound("No source docs available for this message");
+
+            return Ok(new { SourceDocs = message.SourceDocs });
+        }
+
+
+        private async Task<AiApiResponse?> CallAiApiAsync(string message)
         {
             using var client = new HttpClient();
             var content = new StringContent($"\"{message}\"", System.Text.Encoding.UTF8, "application/json");
@@ -125,25 +143,15 @@ namespace SanadAPI.Controllers
                 Console.WriteLine("API Response: " + responseString);
 
                 if (!response.IsSuccessStatusCode)
-                    return $"API Error: {response.StatusCode}";
+                    return new AiApiResponse { response = $"API Error: {response.StatusCode}" };
 
-                var json = System.Text.Json.JsonSerializer.Deserialize<AiApiResponse>(responseString);
-
-                if (!string.IsNullOrWhiteSpace(json?.response))
-                    return json.response;
-
-                if (!string.IsNullOrWhiteSpace(json?.answer))
-                    return json.answer;
-
-                return "No valid AI response found.";
+                var json = JsonSerializer.Deserialize<AiApiResponse>(responseString);
+                return json;
             }
             catch (Exception ex)
             {
-                return $"Error calling AI API: {ex.Message}";
+                return new AiApiResponse { response = $"Error calling AI API: {ex.Message}" };
             }
         }
-
-
-
     }
 }

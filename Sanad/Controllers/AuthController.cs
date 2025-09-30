@@ -55,7 +55,7 @@ namespace Sanad.Controllers
             var expiry = DateTime.UtcNow.AddHours(24);
             verificationTokens[user.Id] = (token, expiry);
 
-            var verificationLink = $"https://adham3mad.github.io/Confirm-Email-Address/?userId={user.Id}&token={token}";
+            var verificationLink = $"https://merry-alpaca-6be923.netlify.app/#/verify_email?userId={user.Id}&token={token}";
 
             try
             {
@@ -159,7 +159,7 @@ namespace Sanad.Controllers
             var expiry = DateTime.UtcNow.AddMinutes(15);
             verificationTokens[user.Id] = (token, expiry);
 
-            var resetLink = $"https://adham3mad.github.io/Reset-Password-Sanad?userId={user.Id}&token={token}";
+            var resetLink = $"https://merry-alpaca-6be923.netlify.app/#/reset_password?userId={user.Id}&token={token}";
 
             try
             {
