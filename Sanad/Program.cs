@@ -48,8 +48,8 @@ namespace SanadAPI
                 {
                     policy
                         .WithOrigins(
-                            "http://localhost:5173",                       
-                            "https://merry-alpaca-6be923.netlify.app"    
+                            "http://localhost:5173",
+                            "https://sanad-legal-ai.netlify.app"
                         )
                         .AllowAnyHeader()
                         .AllowAnyMethod()

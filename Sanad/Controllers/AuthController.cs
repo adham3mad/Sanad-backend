@@ -56,7 +56,7 @@ namespace Sanad.Controllers
             verificationTokens[user.Id] = (token, expiry);
             var encodedToken = System.Web.HttpUtility.UrlEncode(token);
 
-            var verificationLink = $"https://merry-alpaca-6be923.netlify.app/#/verify_email?userId={user.Id}&token={encodedToken}";
+            var verificationLink = $"https://sanad-legal-ai.netlify.app/#/verify_email?userId={user.Id}&token={encodedToken}";
 
             try
             {
@@ -162,7 +162,7 @@ namespace Sanad.Controllers
             var expiry = DateTime.UtcNow.AddMinutes(15);
             verificationTokens[user.Id] = (token, expiry);
 
-            var resetLink = $"https://merry-alpaca-6be923.netlify.app/#/reset_password?userId={user.Id}&token={token}";
+            var resetLink = $"https://sanad-legal-ai.netlify.app//#/reset_password?userId={user.Id}&token={token}";
 
             try
             {
