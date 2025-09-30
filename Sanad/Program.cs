@@ -31,20 +31,23 @@ namespace SanadAPI
                             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                     };
                 });
-
             builder.Services.Configure<EmailSettings>(
-            builder.Configuration.GetSection("SendGrid"));
+                builder.Configuration.GetSection("SendGrid"));
 
             builder.Services.AddControllers();
             builder.Services.AddAuthorization();
+
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowAll", policy =>
+                options.AddPolicy("AllowFrontend", policy =>
                 {
                     policy
-                        .AllowAnyOrigin()
-                        .AllowAnyMethod()
-                        .AllowAnyHeader();
+                        .WithOrigins(
+                            "http://localhost:5173",
+                            "https://merry-alpaca-6be923.netlify.app" 
+                        )
+                        .AllowAnyHeader()
+                        .AllowAnyMethod();
                 });
             });
 
@@ -76,28 +79,19 @@ namespace SanadAPI
             });
 
             var app = builder.Build();
-
-            //using (var scope = app.Services.CreateScope())
-            //{
-            //    var db = scope.ServiceProvider.GetRequiredService<DbEntity>();
-            //    db.Database.Migrate();
-            //}
-
-            app.UseCors("AllowAll");
-
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sanad API v1");
             });
 
+            app.UseCors("AllowFrontend");
 
-
+            app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllers();
-
             var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
             app.Urls.Add($"http://*:{port}");
 
