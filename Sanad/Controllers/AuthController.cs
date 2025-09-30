@@ -54,8 +54,9 @@ namespace Sanad.Controllers
             var token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(32));
             var expiry = DateTime.UtcNow.AddHours(24);
             verificationTokens[user.Id] = (token, expiry);
+            var encodedToken = System.Web.HttpUtility.UrlEncode(token);
 
-            var verificationLink = $"https://merry-alpaca-6be923.netlify.app/#/verify_email?userId={user.Id}&token={token}";
+            var verificationLink = $"https://merry-alpaca-6be923.netlify.app/#/verify_email?userId={user.Id}&token={encodedToken}";
 
             try
             {

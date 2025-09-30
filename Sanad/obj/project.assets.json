@@ -900,6 +900,15 @@
           }
         }
       },
+      "Mono.HttpUtility/1.0.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/Mono.HttpUtility.dll": {}
+        },
+        "runtime": {
+          "lib/net40/Mono.HttpUtility.dll": {}
+        }
+      },
       "Mono.TextTemplating/2.2.1": {
         "type": "package",
         "dependencies": {
@@ -3217,6 +3226,18 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Mono.HttpUtility/1.0.0.1": {
+      "sha512": "YoM2U1plMphxw4KF8PttXka5ZFfC+4hOD8jnXoGvcA6MhJvPFLNN/Zxxsx3+OMBBROSvINq2qUSkrf42ZjXUpA==",
+      "type": "package",
+      "path": "mono.httputility/1.0.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Mono.HttpUtility.dll",
+        "mono.httputility.1.0.0.1.nupkg.sha512",
+        "mono.httputility.nuspec"
+      ]
+    },
     "Mono.TextTemplating/2.2.1": {
       "sha512": "KZYeKBET/2Z0gY1WlTAK7+RHTl7GSbtvTLDXEZZojUdAPqpQNDL6tHv7VUpqfX5VEOh+uRGKaZXkuD253nEOBQ==",
       "type": "package",
@@ -4380,6 +4401,7 @@
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.20",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.20",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.20",
+      "Mono.HttpUtility >= 1.0.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.11",
       "SendGrid >= 9.29.3",
       "Swashbuckle.AspNetCore >= 6.6.2"
@@ -4453,6 +4475,10 @@
             "target": "Package",
             "version": "[8.0.20, )"
           },
+          "Mono.HttpUtility": {
+            "target": "Package",
+            "version": "[1.0.0.1, )"
+          },
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[8.0.11, )"
@@ -4488,5 +4514,17 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Mono.HttpUtility 1.0.0.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net8.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Mono.HttpUtility",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
