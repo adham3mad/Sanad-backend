@@ -2,7 +2,7 @@
 {
     public class VerifyEmailDto
     {
-        public Guid UserId { get; set; }
-        public string Token { get; set; }
+        public Guid userId { get; set; }
+        public string token { get; set; }
     }
 }
