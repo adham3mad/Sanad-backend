@@ -13,9 +13,11 @@ namespace SanadAPI
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            
             builder.Services.AddDbContext<DbEntity>(options =>
                 options.UseNpgsql(builder.Configuration.GetConnectionString("cs")));
 
+            
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -31,23 +33,27 @@ namespace SanadAPI
                             Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
                     };
                 });
+
+            
             builder.Services.Configure<EmailSettings>(
                 builder.Configuration.GetSection("SendGrid"));
 
             builder.Services.AddControllers();
             builder.Services.AddAuthorization();
 
+            
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("AllowFrontend", policy =>
                 {
                     policy
                         .WithOrigins(
-                            "http://localhost:5173",
-                            "https://merry-alpaca-6be923.netlify.app" 
+                            "http://localhost:5173",                       
+                            "https://merry-alpaca-6be923.netlify.app"    
                         )
                         .AllowAnyHeader()
-                        .AllowAnyMethod();
+                        .AllowAnyMethod()
+                        .AllowCredentials(); 
                 });
             });
 
@@ -55,7 +61,6 @@ namespace SanadAPI
             builder.Services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Sanad API", Version = "v1" });
-
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
                     Name = "Authorization",
@@ -65,7 +70,6 @@ namespace SanadAPI
                     In = ParameterLocation.Header,
                     Description = "Enter 'Bearer' [space] and then your token"
                 });
-
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
                 {
                     {
@@ -79,14 +83,14 @@ namespace SanadAPI
             });
 
             var app = builder.Build();
+
             app.UseSwagger();
             app.UseSwaggerUI(c =>
             {
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sanad API v1");
             });
 
-            app.UseCors("AllowFrontend");
-
+            app.UseCors("AllowFrontend");  
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();

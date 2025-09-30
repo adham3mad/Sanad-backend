@@ -39,7 +39,7 @@ namespace SanadAPI.Controllers
                 if (string.IsNullOrWhiteSpace(dto.Content))
                     return BadRequest("Message content is required");
 
-                // ✅ حفظ رسالة المستخدم
+                
                 var userMessage = new Message
                 {
                     Role = dto.Role,
@@ -51,27 +51,26 @@ namespace SanadAPI.Controllers
                 context.Messages.Add(userMessage);
                 await context.SaveChangesAsync();
 
-                // ✅ استدعاء الـ AI
+               
                 var aiResponse = await CallAiApiAsync(dto.Content);
 
-                // لو مفيش رد من الـ AI
+                
                 if (aiResponse == null)
                     aiResponse = new AiApiResponse { response = "No response from AI." };
 
-                // ✅ حفظ رسالة الـ AI
+                
                 var aiMessage = new Message
                 {
                     Role = "AI",
                     Content = aiResponse.response ?? aiResponse.answer ?? "No valid AI response found.",
                     Conversation_Id = dto.ConversationId,
                     CreatedAt = DateTime.UtcNow,
-                    SourceDocs = aiResponse.source_docs // ✅ تخزين الـ source_docs
+                    SourceDocs = aiResponse.source_docs
                 };
 
                 context.Messages.Add(aiMessage);
                 await context.SaveChangesAsync();
 
-                // ✅ إرجاع الرد للـ frontend
                 return Ok(new
                 {
                     aiMessage = new MessageDto

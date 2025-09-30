@@ -81,7 +81,7 @@ namespace Sanad.Controllers
         }
 
         [HttpPost("verify-email")]
-        public async Task<IActionResult> VerifyEmail([FromBody] Guid userId , [FromBody] string token)
+        public async Task<IActionResult> VerifyEmail([FromBody] Guid userId, [FromBody] string token)
         {
             if (!verificationTokens.ContainsKey(userId))
                 return BadRequest("Invalid or expired token");

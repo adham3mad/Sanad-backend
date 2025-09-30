@@ -11,6 +11,18 @@
       "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\controllers\\messagescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\dtos\\verifyemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\dtos\\verifyemaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -27,16 +39,8 @@
       "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\models\\aiapiresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\controllers\\conversationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\controllers\\conversationscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|f:\\sanad-backend\\sanad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7504C9F9-1900-49D2-B619-DCE8D72174DB}|Sanad\\Sanad.csproj|solutionrelative:sanad\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,15 +50,41 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Sanad\\Controllers\\AuthController.cs",
+              "ToolTip": "F:\\Sanad-backend\\Sanad\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Sanad\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAFAAAAAA/f///z8swFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:59:45.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "VerifyEmailDto.cs",
+              "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\DTOs\\VerifyEmailDto.cs",
+              "RelativeDocumentMoniker": "Sanad\\DTOs\\VerifyEmailDto.cs",
+              "ToolTip": "F:\\Sanad-backend\\Sanad\\DTOs\\VerifyEmailDto.cs",
+              "RelativeToolTip": "Sanad\\DTOs\\VerifyEmailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T09:35:55.124Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "MessageDto.cs",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\DTOs\\MessageDto.cs",
               "RelativeDocumentMoniker": "Sanad\\DTOs\\MessageDto.cs",
@@ -62,12 +92,11 @@
               "RelativeToolTip": "Sanad\\DTOs\\MessageDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T08:18:39.244Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T08:18:39.244Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Message.cs",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Models\\Data\\Message.cs",
               "RelativeDocumentMoniker": "Sanad\\Models\\Data\\Message.cs",
@@ -75,12 +104,11 @@
               "RelativeToolTip": "Sanad\\Models\\Data\\Message.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T08:14:10.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-30T08:14:10.073Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AiApiResponse.cs",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Models\\AiApiResponse.cs",
               "RelativeDocumentMoniker": "Sanad\\Models\\AiApiResponse.cs",
@@ -88,12 +116,11 @@
               "RelativeToolTip": "Sanad\\Models\\AiApiResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T23:38:47.762Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-29T23:38:47.762Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "ConversationsController.cs",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Controllers\\ConversationsController.cs",
               "RelativeDocumentMoniker": "Sanad\\Controllers\\ConversationsController.cs",
@@ -101,8 +128,7 @@
               "RelativeToolTip": "Sanad\\Controllers\\ConversationsController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T08:07:51.667Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-26T08:07:51.667Z"
             },
             {
               "$type": "Document",
@@ -112,14 +138,14 @@
               "RelativeDocumentMoniker": "Sanad\\Controllers\\MessagesController.cs",
               "ToolTip": "F:\\Sanad-backend\\Sanad\\Controllers\\MessagesController.cs",
               "RelativeToolTip": "Sanad\\Controllers\\MessagesController.cs",
-              "ViewState": "AgIAAHsAAABgYmZmZmYcwI0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-26T07:56:53.2Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 3,
               "Title": "UsersController.cs",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Controllers\\UsersController.cs",
               "RelativeDocumentMoniker": "Sanad\\Controllers\\UsersController.cs",
@@ -132,20 +158,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "Sanad\\Controllers\\AuthController.cs",
-              "ToolTip": "F:\\Sanad-backend\\Sanad\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "Sanad\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAADMAAAAAwszMzEwnwEQAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T07:45:37.395Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\appsettings.json",
               "RelativeDocumentMoniker": "Sanad\\appsettings.json",
@@ -153,18 +166,17 @@
               "RelativeToolTip": "Sanad\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-20T23:01:25.631Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-20T23:01:25.631Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "F:\\Sanad-backend\\Sanad\\Program.cs",
               "RelativeDocumentMoniker": "Sanad\\Program.cs",
               "ToolTip": "F:\\Sanad-backend\\Sanad\\Program.cs",
               "RelativeToolTip": "Sanad\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAmZmZmVkpwA8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-20T22:59:40.537Z",
               "EditorCaption": ""
