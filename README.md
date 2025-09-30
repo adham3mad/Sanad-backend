@@ -309,6 +309,10 @@
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/Sanad.sourcelink.json'>Sanad.sourcelink.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
 											<td style='padding: 8px;'><b><a href='/Sanad/obj/Debug/net8.0/rjsmcshtml.dswa.cache.json'>rjsmcshtml.dswa.cache.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
@@ -620,6 +624,14 @@
 							<th style='text-align: left; padding: 8px;'>Summary</th>
 						</tr>
 					</thead>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20250930082527_AddSourceDocsToMessages.cs'>20250930082527_AddSourceDocsToMessages.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20250930082527_AddSourceDocsToMessages.Designer.cs'>20250930082527_AddSourceDocsToMessages.Designer.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/DbEntityModelSnapshot.cs'>DbEntityModelSnapshot.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
