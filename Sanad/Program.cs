@@ -41,19 +41,14 @@ namespace SanadAPI
             builder.Services.AddControllers();
             builder.Services.AddAuthorization();
 
-            
             builder.Services.AddCors(options =>
             {
-                options.AddPolicy("AllowFrontend", policy =>
+                options.AddPolicy("AllowAll", policy =>
                 {
                     policy
-                        .WithOrigins(
-                            "http://localhost:5173",
-                            "https://sanad-legal-ai.netlify.app"
-                        )
-                        .AllowAnyHeader()
-                        .AllowAnyMethod()
-                        .AllowCredentials(); 
+                        .AllowAnyOrigin()    
+                        .AllowAnyHeader()    
+                        .AllowAnyMethod();   
                 });
             });
 
@@ -90,7 +85,7 @@ namespace SanadAPI
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "Sanad API v1");
             });
 
-            app.UseCors("AllowFrontend");  
+            app.UseCors("AllowAll");  
             app.UseHttpsRedirection();
             app.UseAuthentication();
             app.UseAuthorization();
