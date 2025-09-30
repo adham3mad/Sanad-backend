@@ -393,6 +393,10 @@
 										</tr>
 									</thead>
 										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/PublishOutputs.c333f2c425.txt'>PublishOutputs.c333f2c425.txt</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
 											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.GeneratedMSBuildEditorConfig.editorconfig'>Sanad.GeneratedMSBuildEditorConfig.editorconfig</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
@@ -406,6 +410,10 @@
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
 											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/staticwebassets.publish.json'>staticwebassets.publish.json</a></b></td>
+											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+										</tr>
+										<tr style='border-bottom: 1px solid #eee;'>
+											<td style='padding: 8px;'><b><a href='/Sanad/obj/Release/net8.0/Sanad.sourcelink.json'>Sanad.sourcelink.json</a></b></td>
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 										<tr style='border-bottom: 1px solid #eee;'>
@@ -745,6 +753,50 @@
 											<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 										</tr>
 									</table>
+									<!-- publish Submodule -->
+									<details>
+										<summary><b>publish</b></summary>
+										<blockquote>
+											<div class='directory-path' style='padding: 8px 0; color: #666;'>
+												<code><b>⦿ Sanad.bin.Release.net8.0.publish</b></code>
+											<table style='width: 100%; border-collapse: collapse;'>
+											<thead>
+												<tr style='background-color: #f8f9fa;'>
+													<th style='width: 30%; text-align: left; padding: 8px;'>File Name</th>
+													<th style='text-align: left; padding: 8px;'>Summary</th>
+												</tr>
+											</thead>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/appsettings.Development.json'>appsettings.Development.json</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/Sanad.runtimeconfig.json'>Sanad.runtimeconfig.json</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/Sanad.deps.json'>Sanad.deps.json</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/web.config'>web.config</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/Sanad.staticwebassets.endpoints.json'>Sanad.staticwebassets.endpoints.json</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/Sanad.pdb'>Sanad.pdb</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+												<tr style='border-bottom: 1px solid #eee;'>
+													<td style='padding: 8px;'><b><a href='/Sanad/bin/Release/net8.0/publish/appsettings.json'>appsettings.json</a></b></td>
+													<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+												</tr>
+											</table>
+										</blockquote>
+									</details>
 								</blockquote>
 							</details>
 						</blockquote>
