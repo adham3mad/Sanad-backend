@@ -248,5 +248,29 @@ namespace Sanad.Controllers
                 throw new Exception($"SendGrid failed: {response.StatusCode}, {body}");
             }
         }
+
+        [HttpPost("register-guest")]
+        public async Task<IActionResult> RegisterGuest()
+        {
+            var user = new User
+            {
+                Name = "Guest",
+                Email = "guest@guest.com",
+                PasswordHash = BCrypt.Net.BCrypt.HashPassword("Gust@123"),
+                Role = "Guest",
+                IsEmailConfirmed = true 
+            };
+
+            context.Users.Add(user);
+            await context.SaveChangesAsync();
+
+            return Ok(new
+            {
+                userId = user.Id,
+                name = user.Name,
+                role = user.Role
+            });
+        }
+
     }
 }
