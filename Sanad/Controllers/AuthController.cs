@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Sanad.DTOs;
+using Sanad.Models;
 using Sanad.Models.Data;
 using SendGrid;
 using SendGrid.Helpers.Mail;
@@ -50,12 +51,18 @@ namespace Sanad.Controllers
 
             context.Users.Add(user);
             await context.SaveChangesAsync();
-
             var token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(32));
             var expiry = DateTime.UtcNow.AddHours(24);
-            verificationTokens[user.Id] = (token, expiry);
             var encodedToken = System.Web.HttpUtility.UrlEncode(token);
+            var verification = new EmailVerification
+            {
+                UserId = user.Id,
+                Token = token,
+                ExpiryDate = expiry
+            };
 
+            context.EmailVerifications.Add(verification);
+            await context.SaveChangesAsync();
             var verificationLink = $"https://sanad-legal-ai.netlify.app/#/verify_email?userId={user.Id}&token={encodedToken}";
 
             try
@@ -65,11 +72,11 @@ namespace Sanad.Controllers
                     user.Name,
                     "Verify your email",
                     $@"
-                    <h2>Welcome {user.Name}</h2>
-                    <p>Please verify your email by clicking the link below:</p>
-                    <p><a href='{verificationLink}' target='_blank'>Verify Email</a></p>
-                    <br/>
-                    <p>This link will expire in 24 hours.</p>"
+            <h2>Welcome {user.Name}</h2>
+            <p>Please verify your email by clicking the link below:</p>
+            <p><a href='{verificationLink}' target='_blank'>Verify Email</a></p>
+            <br/>
+            <p>This link will expire in 24 hours.</p>"
                 );
             }
             catch (Exception ex)
@@ -86,23 +93,25 @@ namespace Sanad.Controllers
             var userId = request.userId;
             var token = request.token;
 
-            if (!verificationTokens.ContainsKey(userId))
+            var verification = await context.EmailVerifications
+                .FirstOrDefaultAsync(v => v.UserId == userId && v.Token == token);
+
+            if (verification == null)
                 return BadRequest("Invalid or expired token");
 
-            var (savedToken, expiry) = verificationTokens[userId];
-            if (savedToken != token || expiry < DateTime.UtcNow)
+            if (verification.ExpiryDate < DateTime.UtcNow)
                 return BadRequest("Invalid or expired token");
 
             var user = await context.Users.FindAsync(userId);
             if (user == null) return NotFound("User not found");
 
             user.IsEmailConfirmed = true;
+            context.EmailVerifications.Remove(verification);
             await context.SaveChangesAsync();
-
-            verificationTokens.Remove(userId);
 
             return Ok(new { message = "Email verified successfully!" });
         }
+
 
 
         [HttpPost("login")]
