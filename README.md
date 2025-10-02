@@ -541,6 +541,10 @@
 						</tr>
 					</thead>
 						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Models/EmailVerification.cs'>EmailVerification.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/Models/AiApiResponse.cs'>AiApiResponse.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
@@ -637,6 +641,10 @@
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20251002150925_AddEmailVerificationTable.Designer.cs'>20251002150925_AddEmailVerificationTable.Designer.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20250930082527_AddSourceDocsToMessages.Designer.cs'>20250930082527_AddSourceDocsToMessages.Designer.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
@@ -650,6 +658,10 @@
 						</tr>
 						<tr style='border-bottom: 1px solid #eee;'>
 							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20250920223151_init.Designer.cs'>20250920223151_init.Designer.cs</a></b></td>
+							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
+						</tr>
+						<tr style='border-bottom: 1px solid #eee;'>
+							<td style='padding: 8px;'><b><a href='/Sanad/Migrations/20251002150925_AddEmailVerificationTable.cs'>20251002150925_AddEmailVerificationTable.cs</a></b></td>
 							<td style='padding: 8px;'>Code>❯ REPLACE-ME</code></td>
 						</tr>
 					</table>
