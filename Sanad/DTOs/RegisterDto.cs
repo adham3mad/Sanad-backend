@@ -13,6 +13,7 @@ namespace Sanad.DTOs
         public string Email { get; set; }
 
         [Required(ErrorMessage = "Password is required")]
+        [MinLength(6,ErrorMessage = "Password must contain atleast 6")]
         [StrongPassword]
         public string Password { get; set; }
 
